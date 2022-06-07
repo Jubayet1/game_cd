@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "stars": 4.9,
+        "name": "Minecraft",
+        "price": 530,
+        "img": "https://m.media-amazon.com/images/I/71AKO+U6F6L._SX385_.jpg"
+    },
+    {
+        "id": 2,
+        "stars": 4.8,
+        "name": "GTA V",
+        "price": 540,
+        "img": "https://m.media-amazon.com/images/I/61+s8HfeFoL._SX385_.jpg"
+    },
+    {
+        "id": 3,
+        "stars": 4.7,
+        "name": "FORTNITE",
+        "price": 560,
+        "img": "https://m.media-amazon.com/images/I/712XH85ieHL._SX385_.jpg"
+    },
+    {
+        "id": 4,
+        "stars": 4.6,
+        "name": "Call of Duty",
+        "price": 510,
+        "img": "https://m.media-amazon.com/images/I/81dZvcAh+LS._SX385_.jpg"
+    },
+    {
+        "id": 5,
+        "stars": 4.5,
+        "name": "Need for Speed",
+        "price": 590,
+        "img": "https://m.media-amazon.com/images/I/71pH5mrhc5L._SX385_.jpg"
+    },
+    {
+        "id": 6,
+        "stars": 4.4,
+        "name": "Batman",
+        "price": 550,
+        "img": "https://m.media-amazon.com/images/I/81KdPARnmdL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 7,
+        "stars": 4.3,
+        "name": "Cricket 22",
+        "price": 530,
+        "img": "https://m.media-amazon.com/images/I/717yTdgxGEL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 8,
+        "stars": 4.2,
+        "name": "FIFA 20",
+        "price": 570,
+        "img": "https://m.media-amazon.com/images/I/61UuGXhNqdL._SX385_.jpg"
+    },
+    {
+        "id": 9,
+        "stars": 4.1,
+        "name": "Spiderman",
+        "price": 520,
+        "img": "https://m.media-amazon.com/images/I/814tECNqHBL._SX385_.jpg"
+    },
+    {
+        "id": 10,
+        "stars": 4,
+        "name": "CYBERPUNK",
+        "price": 590,
+        "img": "https://m.media-amazon.com/images/I/81KJ8RgF3GL._SX342_.jpg"
+    },
+    {
+        "id": 11,
+        "stars": 3.9,
+        "name": "Red Dead Redemption 2",
+        "price": 540,
+        "img": "https://m.media-amazon.com/images/I/71SyRObF2yL._SX385_.jpg"
+    },
+    {
+        "id": 12,
+        "stars": 3.8,
+        "name": "FarCry",
+        "price": 550,
+        "img": "https://m.media-amazon.com/images/I/81fypNGG2uL._SX342_.jpg"
+    }
+]
