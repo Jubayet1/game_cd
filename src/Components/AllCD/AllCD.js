@@ -9,7 +9,7 @@ const AllCD = () => {
             .then(data => setCds(data))
     }, []);
     return (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 gap-y-8">
             {cds.map(cd => <SingleCD 
                 key={cd.id}
                 stars={cd.stars}
