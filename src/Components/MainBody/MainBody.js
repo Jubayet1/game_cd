@@ -1,10 +1,10 @@
 import React from "react";
 import AllCD from "../AllCD/AllCD";
-import Cart from "../Cart/Cart";
+import "./MainBody.css"
 
 const MainBody = () => {
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-4 bg-">
       <div className="col-span-4">
         <AllCD />
       </div>

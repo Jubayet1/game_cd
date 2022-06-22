@@ -3,7 +3,7 @@ import React from "react";
 const SingleCD = (props) => {
   const { image, name, stars, price, addToCartBTN } = props;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card shadow-xl">
       <figure className="px-10 pt-10">
         <img src={image} alt="Game CD" className="rounded-xl" />
       </figure>
