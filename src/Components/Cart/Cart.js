@@ -1,10 +1,11 @@
 import React from "react";
 
 const Cart = ({ cds }) => {
-    let allCDs = [...cds];
+  let allCDs = [...cds];
+  let newCDs = allCDs.slice(0, 4);
 
   const choosing = () => {
-    const chooseOne = allCDs[Math.floor(Math.random() * allCDs.length)];
+    const chooseOne = newCDs[Math.floor(Math.random() * newCDs.length)];
     const name = chooseOne.name;
     console.log(chooseOne.image);
     const area = document.getElementById("gameArea");
@@ -20,7 +21,7 @@ const Cart = ({ cds }) => {
   const clearCart = () => {
     const area = document.getElementById("gameArea");
     area.innerHTML = "";
-    allCDs = [];
+    newCDs = [];
     const number = document.getElementById("number");
     number.innerText = "0";
   };
@@ -29,13 +30,13 @@ const Cart = ({ cds }) => {
     <div>
       <div>
         <h2 id="selectedItems">
-          You've selected <span id="number">{allCDs.length}</span> items{" "}
+          You've selected <span id="number">{newCDs.length}</span> items{" "}
         </h2>
         <h3>Selected Items</h3>
         <div id="gameArea">
-          {allCDs.map((game) => {
+          {newCDs.map((game) => {
             return (
-              <div className="gameInCart">
+              <div className="flex flex-row my-4">
                 <img src={game.image} alt="GameImage" className="w-32" />
                 <p>{game.name}</p>
               </div>
