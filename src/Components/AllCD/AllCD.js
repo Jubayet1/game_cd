@@ -15,21 +15,27 @@ const AllCD = () => {
     const newCart = [...cart, product];
     setCart(newCart);
   };
-  
-  return (
-    <div className="grid grid-cols-3 gap-4 gap-y-8">
-      {cds.map((cd) => (
-        <SingleCD
-          key={cd.id}
-          stars={cd.stars}
-          name={cd.name}
-          price={cd.price}
-          image={cd.img}
-          addToCartBTN={addToCartBTN}
-        />
-      ))}
 
-      <Cart cds={cart} />
+  return (
+    <div className="grid grid-cols-4 gap-4">
+      <div className="col-span-3">
+        <div className="grid grid-cols-3 gap-4 gap-y-8">
+          {cds.map((cd) => (
+            <SingleCD
+              key={cd.id}
+              stars={cd.stars}
+              name={cd.name}
+              price={cd.price}
+              image={cd.img}
+              addToCartBTN={addToCartBTN}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="col-span-1">
+        <Cart cds={cart} />
+      </div>
     </div>
   );
 };

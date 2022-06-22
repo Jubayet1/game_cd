@@ -27,7 +27,6 @@ const Cart = ({ cds }) => {
 
   return (
     <div>
-        <p>fff</p>
       <div>
         <h2 id="selectedItems">
           You've selected <span id="number">{allCDs.length}</span> items{" "}
@@ -37,7 +36,7 @@ const Cart = ({ cds }) => {
           {allCDs.map((game) => {
             return (
               <div className="gameInCart">
-                <img src={game.image} alt="GameImage" />
+                <img src={game.image} alt="GameImage" className="w-32" />
                 <p>{game.name}</p>
               </div>
             );
