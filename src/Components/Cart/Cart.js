@@ -1,4 +1,5 @@
 import React from "react";
+import "./Cart.css";
 
 const Cart = ({ cds }) => {
   let allCDs = [...cds];
@@ -7,7 +8,6 @@ const Cart = ({ cds }) => {
   const choosing = () => {
     const chooseOne = newCDs[Math.floor(Math.random() * newCDs.length)];
     const name = chooseOne.name;
-    console.log(chooseOne.image);
     const area = document.getElementById("gameArea");
     area.innerHTML = "";
     area.innerHTML = `
@@ -27,7 +27,7 @@ const Cart = ({ cds }) => {
   };
 
   return (
-    <div>
+    <div className="one">
       <div>
         <h2 id="selectedItems">
           You've selected <span id="number">{newCDs.length}</span> items{" "}
@@ -43,9 +43,9 @@ const Cart = ({ cds }) => {
             );
           })}
         </div>
-        <button onClick={choosing}>OUR RECOMMENDATION</button>
+        <button className="btn btn-primary" onClick={choosing}>OUR RECOMMENDATION</button>
         <br /> <br />
-        <button onClick={clearCart}>CLEAR THE CART</button>
+        <button className="btn btn-primary" onClick={clearCart}>CLEAR THE CART</button>
       </div>
     </div>
   );

@@ -3,17 +3,23 @@ import React from "react";
 const SingleCD = (props) => {
   const { image, name, stars, price, addToCartBTN } = props;
   return (
-    <div className="flex flex-col content-center">
-      <img src={image} alt="" className="w-48 ml-4" />
-      <p className="text-2xl my-4">{name}</p>
-      <p className="text-xl">Ratings: {stars}</p>
-      <p className="text-md">Price: {price}</p>
-      <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-6/12 mx-auto"
-        onClick={() => addToCartBTN(props)}
-      >
-        Add To List
-      </button>
+    <div className="card bg-base-100 shadow-xl">
+      <figure className="px-10 pt-10">
+        <img src={image} alt="Game CD" className="rounded-xl" />
+      </figure>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{name}</h2>
+        <p>Ratings: {stars}</p>
+        <p>Price: {price}</p>
+        <div className="card-actions">
+          <button
+            className="btn btn-primary"
+            onClick={() => addToCartBTN(props)}
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
